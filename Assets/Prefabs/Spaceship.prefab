@@ -114,6 +114,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &3531446685346212211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302446978616719757}
+  m_Layer: 0
+  m_Name: ShootPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1302446978616719757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3531446685346212211}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.51}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9050438677090663166}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4696301312135450976
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +180,7 @@ Transform:
   - {fileID: 9019879186980125109}
   - {fileID: 743034853887420828}
   - {fileID: 3812820644415131180}
+  - {fileID: 1302446978616719757}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6421784315988121711
@@ -165,6 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   SPEED: 0
   SENSITIVITY: 0
+  bullet: {fileID: 8631066495712083001, guid: 5af0b8963ba5bee4ebb1cb8423067558, type: 3}
+  bulletSpawnPosition: {fileID: 3531446685346212211}
 --- !u!54 &5691846502735217167
 Rigidbody:
   m_ObjectHideFlags: 0
